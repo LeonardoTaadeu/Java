@@ -38,5 +38,13 @@ public class Aula04Operadores {
         boolean isDentroDaLei = idade > 30 && salario > 4612;
 
         System.out.println(nome+" esta dentro da lei: "+isDentroDaLei);
+
+        double valorTotalContaCorrente = 200;
+        double valorTotalContaPoupanca = 10000;
+
+        float valorPlaystation = 5000F;
+
+        boolean isPlaystationCincoCompravel = valorTotalContaCorrente > valorPlaystation || valorTotalContaPoupanca > valorPlaystation;
+        System.out.println("da para comprar o play: "+isPlaystationCincoCompravel);
     }
 }
