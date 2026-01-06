@@ -46,5 +46,32 @@ public class Aula04Operadores {
 
         boolean isPlaystationCincoCompravel = valorTotalContaCorrente > valorPlaystation || valorTotalContaPoupanca > valorPlaystation;
         System.out.println("da para comprar o play: "+isPlaystationCincoCompravel);
+
+        // =, +=, -=, *=, /=, %=
+
+        double bonus = 1800;
+        bonus = 2000;
+        System.out.println(bonus); // Aqui ele eh 2000
+
+        double bonus2 = 1800;
+        bonus2 += 2000;
+        System.out.println(bonus2); // Aqui ele eh 3800
+
+        double bonus3 = 1800;
+        bonus3 -= 2000;
+        System.out.println(bonus3); // Aqui ele eh -200
+
+        //
+        int contador = 0;
+        contador += 1; // contador = contador + 1
+        System.out.println(contador);
+
+        //OU
+
+        int contadorPlusPlus = 0;
+        contadorPlusPlus++;
+        System.out.println(contadorPlusPlus);
+
+        // ++contador / --contador == primeiro executa
     }
 }
