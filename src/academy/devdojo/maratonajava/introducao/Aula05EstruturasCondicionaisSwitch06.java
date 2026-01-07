@@ -10,25 +10,25 @@ public class Aula05EstruturasCondicionaisSwitch06 {
 
         switch (valorDia) {
             case 1:
-                System.out.println("Domingo");
+                System.out.println("Final de Semana");
                 break;
             case 2:
-                System.out.println("Segunda");
+                System.out.println("Semana");
                 break;
             case 3:
-                System.out.println("Terça");
+                System.out.println("Semana");
                 break;
             case 4:
-                System.out.println("Quarta");
+                System.out.println("Semana");
                 break;
             case 5:
-                System.out.println("Quinta");
+                System.out.println("Semana");
                 break;
             case 6:
-                System.out.println("Sexta");
+                System.out.println("Semana");
                 break;
             case 7:
-                System.out.println("Sábado");
+                System.out.println("Final de Semana");
                 break;
             default:
                 System.out.println("Opção inválida");
