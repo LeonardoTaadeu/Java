@@ -14,13 +14,20 @@ public class Aula05EstruturasCondicionais04 {
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Qual é o valor do seu salário anual: ")
-        double valorSalarioAnual = scanner.nextLine();
+        System.out.println("Qual é o valor do seu salário anual: ");
+        double valorSalarioAnual = scanner.nextDouble();
 
-        double valorTaxaSalarioAnualPequeno = valorSalarioAnual*0
+        double valorTaxaSalarioAnualPequeno =valorSalarioAnual * 0.097;
+        double valorTaxaSalarioAnualMedio =valorSalarioAnual * 0.3735;
+        double valorTaxaSalarioAnualGrande =valorSalarioAnual * 0.4950;
 
-        if(valorSalarioAnual >= 34712) {
-            
+        if(valorSalarioAnual >= 0 && valorSalarioAnual <= 34712) {
+            System.out.println("Você precisa pagar: "+valorTaxaSalarioAnualPequeno);
+        }else if(valorSalarioAnual >= 34713 && valorSalarioAnual <= 68507) {
+            System.out.println("Você precisa pagar: "+valorTaxaSalarioAnualMedio);
+        }else {
+            System.out.println("Você precisa pagar: "+valorTaxaSalarioAnualGrande);
         }
+
     }
 }
