@@ -8,5 +8,13 @@ public class Aula06EstruturasDeRepetição04 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Qual o valor total do carro: ");
+        double valorCarro = scanner.nextDouble();
+
+        qntdParcelas = valorCarro/1000;
+
+        int valorParcela = valorCarro/qntdParcelas;
+
+        System.out.println(qntdParcelas);
+        System.out.println(valorParcela);
     }
 }
