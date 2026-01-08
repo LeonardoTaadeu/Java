@@ -10,9 +10,12 @@ public class Aula07Arrays02 {
         //string null
         
         String[] nomes = new String[3];
+        nomes[0] = "Leonardo";
+        nomes[1] = "Tadeu";
+        nomes[2] = "Brito";
 
-        nomes[0] = 'Leonardo';
-        nomes[1] = 'Tadeu';
-        nomes[2] = 'Brito';
+        for (int i = 0; i < 3; i++) {
+            System.out.println(nomes[i]);
+        }
     }
 }
