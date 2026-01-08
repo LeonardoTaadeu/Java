@@ -10,11 +10,13 @@ public class Aula06EstruturasDeRepetição04 {
         System.out.println("Qual o valor total do carro: ");
         double valorCarro = scanner.nextDouble();
 
-        qntdParcelas = valorCarro/1000;
-
-        int valorParcela = valorCarro/qntdParcelas;
-
-        System.out.println(qntdParcelas);
-        System.out.println(valorParcela);
+        for (int parcela = 1; parcela <= valorCarro ; parcela++) {
+            double valorParcela = valorCarro/parcela;
+            if(valorParcela >= 1000) {
+                System.out.println("Parcela "+parcela+" R$"+valorParcela );
+            }else {
+                break;
+            }
+        }
     }
 }
