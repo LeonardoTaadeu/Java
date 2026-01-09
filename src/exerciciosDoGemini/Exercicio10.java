@@ -19,14 +19,20 @@ public class Exercicio10 {
             contador++;
         }
 
+        int totalPares = 0;
+        int totalImpares = 0;
+
         for (int i = 0; i < 10; i++) {
             int numeroArray = contadorNumeros[i];
 
             if(numeroArray % 2 == 0){
                 System.out.println(numeroArray+" PAR");
+                totalPares++;
             }else {
                 System.out.println(numeroArray+" IMPAR");
+                totalImpares++;
             }
         }
+        System.out.println("O total de numeros pares foi: "+totalPares+" e o total de numeros impares foi: "+totalImpares);
     }
 }
