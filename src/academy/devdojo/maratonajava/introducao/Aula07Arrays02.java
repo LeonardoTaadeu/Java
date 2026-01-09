@@ -9,7 +9,7 @@ public class Aula07Arrays02 {
         //boolean false
         //string null
         
-        String[] nomes = new String[3];
+        String[] nomes = new String[4];
         nomes[0] = "Leonardo";
         nomes[1] = "Tadeu";
         nomes[2] = "Brito";
