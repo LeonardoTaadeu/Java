@@ -19,10 +19,14 @@ public class Exercicio10 {
             contador++;
         }
 
-        for (int i = 0; i < ; i++) {
-            
+        for (int i = 0; i < 10; i++) {
+            int numeroArray = contadorNumeros[i];
+
+            if(numeroArray % 2 == 0){
+                System.out.println(numeroArray+" PAR");
+            }else {
+                System.out.println(numeroArray+" IMPAR");
+            }
         }
-
-
     }
 }
