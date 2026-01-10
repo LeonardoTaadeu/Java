@@ -9,7 +9,7 @@ public class Exercicio11 {
         
         int contadorNotas = 0;
 
-        int[] numerosNotas = new int[4];
+        int[] numerosNotas = new int[5];
 
         while (contadorNotas < 5) {
             System.out.println("Qual sua nota: ");
@@ -19,12 +19,15 @@ public class Exercicio11 {
             contadorNotas++;
         }
 
-        
+        int maiorNumero = numerosNotas[0];
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < numerosNotas[5]; i++) {
             int notaArray = numerosNotas[i];
 
-            
+            if (notaArray > maiorNumero) {
+                maiorNumero = notaArray;
+            }
+
         }
     }
 }
