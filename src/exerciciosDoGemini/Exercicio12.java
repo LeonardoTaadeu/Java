@@ -21,14 +21,22 @@ public class Exercicio12 {
             contadorNotas++;
         }
 
-        double somaNotas = 5; //Essa variavel vai ter o valor da soma do Array
+        double somaNotas = 0; //Essa variavel vai ter o valor da soma do Array
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 5; i++) {
             somaNotas += notasAlunos[i];
         }
 
         double divisaoNotas = somaNotas/5;
 
         System.out.println("A media da turma vale: "+divisaoNotas);
+
+        for (int i = 0; i < 5; i++) {
+            double notaAtual = notasAlunos[i];
+
+            if(notaAtual > divisaoNotas) {
+                System.out.println("As notas que ficaram acima da media sao: "+notaAtual);
+            }
+        }
     }
 }
