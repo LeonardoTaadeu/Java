@@ -21,13 +21,14 @@ public class Exercicio11 {
 
         int maiorNumero = numerosNotas[0];
 
-        for (int i = 0; i < numerosNotas[5]; i++) {
+        for (int i = 0; i < 5; i++) {
             int notaArray = numerosNotas[i];
 
             if (notaArray > maiorNumero) {
                 maiorNumero = notaArray;
             }
-
         }
+
+        System.out.println("O maior numero: "+maiorNumero);
     }
 }
