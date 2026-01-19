@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacoreintroducaoclasses.dominio;
 
-public class Pessoa {
+public class Estudante {
     public String nome;
     public int idade;
     public char sexo;
