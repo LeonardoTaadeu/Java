@@ -2,6 +2,8 @@ package academy.devdojo.maratonajava.sistemafuncionarios.teste;
 
 import java.util.Scanner;
 
+//Criando um sistema onde o usuario vai cadastrar funcionarios, ver a media de salario e consegue acessar os menus atraves dos numerais
+
 public class empresaFuncionarios {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -23,7 +25,7 @@ public class empresaFuncionarios {
 
             System.out.println("Deseja inserir um novo usuario? Caso sim digite 1, caso nao digite 0: ");
             confirmarNovoFuncionario = scanner.nextInt();
-
+            scanner.nextLine();
         }
     }
 }
