@@ -10,11 +10,16 @@ public class CarroTest01 {
         carro.nome = "Ford";
         carro.estado = "Novo";
         carro.ano = 1990;
-        System.out.println("Nome do carro: "+carro.nome+", esta no estado "+carro.estado+", do ano de "+carro.ano);
 
         carro2.nome = "Gurgel";
         carro2.estado = "Velho";
         carro2.ano = 1970;
+
+        //carro = carro2;
+        //carro2 = carro;
+
+        System.out.println("Nome do carro: "+carro.nome+", esta no estado "+carro.estado+", do ano de "+carro.ano);
+
         System.out.println("Nome do carro: "+carro2.nome+", esta no estado "+carro2.estado+", do ano de "+carro2.ano);
 
 
