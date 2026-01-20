@@ -17,6 +17,23 @@ public class menuTerminal {
         System.out.println("-------Digite uma Opção ------");
 
         int opcaoMenu = scanner.nextInt();
+
+        switch (opcaoMenu) {
+            case 1:
+                novoFuncionario();
+                break;
+            case 2:
+                listarFuncionarios();
+                break;
+            case 3:
+                estatisticasFuncionarios();
+                break;
+            case 4:
+                System.out.println("Encerrando o sistema");
+                break;
+            default:
+                System.out.println("Opção inválida, digite uma opção novamente: ");
+        }
     }
 
     public static void novoFuncionario() {
@@ -44,6 +61,11 @@ public class menuTerminal {
     }
 
     public static void listarFuncionarios() {
-        
+
     }
+
+    public static void estatisticasFuncionarios() {
+
+    }
+
 }
