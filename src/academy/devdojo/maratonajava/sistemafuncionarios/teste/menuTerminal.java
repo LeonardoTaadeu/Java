@@ -8,33 +8,40 @@ public class menuTerminal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("|----------------------------|");
-        System.out.println("| Opção 1: Novo Funcionario  |");
-        System.out.println("| Opção 2: Funcionarios      |");
-        System.out.println("| Opção 3: Estatisticas      |");
-        System.out.println("| Opção 4: Encerrar          |");
-        System.out.println("|----------------------------|");
-        System.out.println("-------Digite uma Opção ------");
+        int opcoesMenuPrograma = -1;
 
-        int opcaoMenu = scanner.nextInt();
+        while(opcoesMenuPrograma != 4) {
+                System.out.println("|----------------------------|");
+                System.out.println("| Opção 1: Novo Funcionario  |");
+                System.out.println("| Opção 2: Funcionarios      |");
+                System.out.println("| Opção 3: Estatisticas      |");
+                System.out.println("| Opção 4: Encerrar          |");
+                System.out.println("|----------------------------|");
+                System.out.println("-------Digite uma Opção ------");
 
-        switch (opcaoMenu) {
-            case 1:
-                novoFuncionario();
-                break;
-            case 2:
-                listarFuncionarios();
-                break;
-            case 3:
-                estatisticasFuncionarios();
-                break;
-            case 4:
-                System.out.println("Encerrando o sistema");
-                break;
-            default:
-                System.out.println("Opção inválida, digite uma opção novamente: ");
-        }
+                int opcaoMenu = scanner.nextInt();
+
+                switch (opcaoMenu) {
+                    case 1:
+                        novoFuncionario();
+                        break;
+                    case 2:
+                        listarFuncionarios();
+                        break;
+                    case 3:
+                        estatisticasFuncionarios();
+                        break;
+                    case 4:
+                        System.out.println("Encerrando o sistema");
+                        break;
+                    default:
+                        System.out.println("Opção inválida, digite uma opção novamente: ");
+                }
+            }
+        scanner.close();
     }
+
+        
 
     public static void novoFuncionario() {
         Scanner scanner = new Scanner(System.in);
