@@ -63,6 +63,12 @@ public class menuTerminal {
 
             System.out.println("Deseja inserir um novo usuario? Caso sim digite 1, caso nao digite 0: ");
             confirmarNovoFuncionario = scanner.nextInt();
+
+            while(confirmarNovoFuncionario != 0 && confirmarNovoFuncionario != 1) {
+                System.out.println("Digite 1 se deseja inserir um novo funcionário ou digite 0 se deseja voltar ao menu inicial");
+                confirmarNovoFuncionario = scanner.nextInt();
+            }
+
             scanner.nextLine();
         }
     }
