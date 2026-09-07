@@ -1,0 +1,20 @@
+package academy.devdojo.maratonajava.Aintroducao;
+
+public class Aula07Arrays02 {
+    public static void main(String[] args) {
+        // Valores padrões para cada tipo
+        //byte, short, int, long, float e double ====> 0
+        //char 'u000'
+        //boolean false
+        //string null
+        
+        String[] nomes = new String[4];
+        nomes[0] = "Leonardo";
+        nomes[1] = "Tadeu";
+        nomes[2] = "Brito";
+
+        for (int i = 0; i < 4; i++) {
+            System.out.println(nomes[i]);
+        }
+    }
+}
